@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amru Abd Almahmoud - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      /* Set default text color to white for dark theme */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      /* Set background color to dark grey */
+      background-image: url("background.jpg");
+      /* Replace with your desired image (adjust brightness) */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      padding: 20px;
+      background-color: rgba(30, 30, 30, 0.8);
+      /* Semi-transparent dark grey background */
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      /* Adjust shadow for dark background */
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .profile-info {
+      flex: 1;
+      /* Allow text to expand within remaining space */
+    }
+
+    .profile-name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      /* Set text color to white for dark theme */
+      margin-bottom: 10px;
+    }
+
+    .profile-bio {
+      font-size: 16px;
+      color: #ddd;
+      /* Set text color to light grey for dark theme */
+      line-height: 1.5;
+      /* Adjust line spacing for better readability */
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      /* Responsive grid layout */
+      grid-gap: 20px;
+    }
+
+    .project {
+      background-color: #222;
+      /* Set project background to dark grey */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+      /* Smooth hover effect */
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+      /* Slight zoom on hover */
+    }
+
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      /* Set text color to white for dark theme */
+      margin-bottom: 5px;
+    }
+
+    .project-description {
+      font-size: 14px;
+      color: #ddd;
+      /* Set text color to light grey for dark theme */
+      line-height: 1.5;
+    }
+
+    .project-link {
+      font-size: 14px;
+      color: #0099ff;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+      /* Smoother color change hover */
+    }
+
+    .project-link:hover {
+      color: #007bff;
+      /* Slightly darker blue on hover */
+    }
+
+    /* Additional styles for a modern look */
+    .projects-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <a href="#"><img src="Bilder/me.jpeg" alt="Profile image" class="profile-image"></a>
+      
+      <div class="profile-info">
+        <h1 class="profile-name">Amru Abd Almahmoud</h1>
+        <p class="profile-bio">
+          Hochmotiviert und leidenschaftlich in der Java-Programmierung. Durch Projekte habe ich meine technischen Fähigkeiten verbessert und meine Kommunikationsfähigkeiten entwickelt. Erfolgreich in Teamprojekten und der Entwicklung komplexer Java-Anwendungen. Hier präsentiere ich stolz meine Auswahl an Java-Projekten, die meine Expertise demonstrieren.
+        </p>
+      </div>
+    </div>
+    <h2 class="projects-title">My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="Bilder/arrayTarget.jpeg" alt="Array with Target" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Sum of Tow numbers </h3>
+          <p class="project-description">
+            Ein einfacher weg, der mit Java loops erstellt wurde.
+          </p>
+          <a href="arFiles/TowSum.jar" class="project-link" target="_blank">Download jar file</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="Bilder/TekTakToo.jpg" alt="Tic Tac Toe" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Tic Tac Toe</h3>
+          <p class="project-description">
+            Ein klassisches Tic Tac Toe Spiel.
+          </p>
+          <a href="JarFiles/TikTakToo.jar" class="project-link" target="_blank">Download jar file</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="Bilder/form24to12.jpg" alt="convert time from 24 to 12" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">convert time from 24 to 12</h3>
+          <p class="project-description">
+            Ein einfacher weg, mit dem kannst du die Uhrzeit umwandeln.
+          </p>
+          <a href="JarFiles/convertTimeTo12.jar" class="project-link" target="_blank">Download jar file</a>
+        </div>
+      </div>
+      <div class="project">
+        <a href="http://127.0.0.1:5501/index.html">
+          <img src="Bilder/quraan.jpeg" alt="quraan mp3 player" class="project-image">
+        </a>
+        
+        <div class="project-content">
+          <h3 class="project-title">quraan mp3 player</h3>
+          <p class="project-description">
+            Ein einfacher weg, um quraan anzuhören.
+          </p>
+          <a href="zipFiles/quranMP3API.zip" class="project-link" target="_blank">Download zip file</a>
+        </div>
+      </div>
+      
+  </div>
+</body>
+
+</html>
